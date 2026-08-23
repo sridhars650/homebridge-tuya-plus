@@ -505,9 +505,10 @@
             },
             "dpCurrentTemperature": {
               "type": "integer",
+              "title": "Current Temperature DP",
               "placeholder": "3",
               "condition": {
-                "functionBody": "return model.devices && model.devices[arrayIndices] && ['Convector', 'SimpleHeater'].includes(model.devices[arrayIndices].type);"
+                "functionBody": "return model.devices && model.devices[arrayIndices] && ['Convector', 'SimpleHeater', 'Fan', 'FanLight'].includes(model.devices[arrayIndices].type);"
               }
             },
             "dpLightOn": {
